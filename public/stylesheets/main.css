@@ -1,0 +1,13 @@
+/* Main CSS file */
+
+/* Globals */
+h1.main-heading {
+  font-family: Georgia, serif; 
+  font-size: 4em;
+  font-style: italic;
+  }
+
+
+/* New Note */
+#note-body {width: 800px;}
+#note-title {width: 500px;}

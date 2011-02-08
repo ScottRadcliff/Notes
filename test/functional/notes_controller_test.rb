@@ -4,6 +4,18 @@ class NotesControllerTest < ActionController::TestCase
   setup do
     @note = notes(:one)
   end
+ 
+ test "should see notes title" do
+    get :index
+    assert_select 'title', 'Notes'
+ end
+
+  test "should see notes" do
+    get :index
+    assert_not_nil assigns(:notes)
+    assert_select "#notes-container"
+    assert_select "#notes-container p"
+  end
 
   test "should get index" do
     get :index

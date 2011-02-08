@@ -1,4 +1,4 @@
-<h1>Listing notes</h1>
+<h1>Recent Notes</h1>
 
 <table>
   <tr>
@@ -8,7 +8,8 @@
     <th></th>
     <th></th>
   </tr>
-
+<div id="notes-container">
+<p></p>
 <% @notes.each do |note| %>
   <tr>
     <td><%= note.title %></td>
@@ -18,6 +19,7 @@
     <td><%= link_to 'Destroy', note, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
+</div>
 </table>
 
 <br />

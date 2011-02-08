@@ -2,7 +2,8 @@ class NotesController < ApplicationController
   # GET /notes
   # GET /notes.xml
   def index
-    @notes = Note.all
+    @notes = Note.find(:all, :limit => "5", :order => 'created_at DESC')
+    #@notes = Note.all
 
     respond_to do |format|
       format.html # index.html.erb

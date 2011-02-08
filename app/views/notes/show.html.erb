@@ -7,7 +7,7 @@
 
 <p>
   <b>Body:</b>
-  <%= @note.body %>
+  <%= textilize(@note.body).html_safe %>
 </p>
 
 
