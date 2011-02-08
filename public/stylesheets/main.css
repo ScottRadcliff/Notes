@@ -11,3 +11,7 @@ h1.main-heading {
 /* New Note */
 #note-body {width: 800px;}
 #note-title {width: 500px;}
+
+
+/* Index */
+ul li.note {list-style-type: none;}
