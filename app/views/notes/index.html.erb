@@ -1,7 +1,7 @@
 <h2 id="recent-notes-heading">Recent Notes</h2>
 
 <div id="notes-container">
-<table>
+<table id="recent-notes">
 <% @notes.each do |note| %>
   <tr class="<%= cycle("even", "odd") %>">
     <td><%= link_to note.title, note %></td> 
@@ -11,5 +11,4 @@
 </table>
 </div>
 
-<br />
 

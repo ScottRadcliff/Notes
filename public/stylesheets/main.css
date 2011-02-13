@@ -22,11 +22,16 @@ h1.main-heading {
 
 a#home-link, a#new-note-link {text-decoration: none; color: #201B21;}
 a#new-note-link {float: right; position:relative; bottom: 40px;}
+a#home-link:hover, a#new-note-link:hover {color: #D5D4CF;}
+
 
 
 /* New Note */
 #note-body {width: 800px;}
 #note-title {width: 500px;}
+/* End New Note */
+
+
 
 
 /* Index */
@@ -41,3 +46,11 @@ h2#recent-notes-heading {
   font-style: italic;
 }
 
+table#recent-notes a {color: #000;}
+/* End Index */
+
+
+
+/* Show */
+p#note-title {color: #666; font-size: 150%;}
+/* End Show */
