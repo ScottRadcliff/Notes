@@ -20,6 +20,9 @@ h1.main-heading {
   font-style: italic;
   }
 
+a#home-link, a#new-note-link {text-decoration: none; color: #201B21;}
+a#new-note-link {float: right; position:relative; bottom: 40px;}
+
 
 /* New Note */
 #note-body {width: 800px;}

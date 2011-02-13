@@ -1,23 +1,7 @@
 <h1>Recent Notes</h1>
 
-<!--<table>
-  <tr>
-    <th>Title</th>
-    <th>Body</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>-->
 <div id="notes-container">
-<p></p>
 <% @notes.each do |note| %>
-<!--  <tr>
-    <td><%= note.title %></td>
-    <td><%= note.body %></td>
-    <td><%= link_to 'Show', note %></td>
-    <td><%= link_to 'Edit', edit_note_path(note) %></td>
-    <td><%= link_to 'Destroy', note, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>-->
   <ul>
     <li class='note'><%= link_to note.title, note %> on <%= show_date(note.created_at) %></li>
   </ul>
