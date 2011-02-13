@@ -1,13 +1,15 @@
-<h1>Recent Notes</h1>
+<h2 id="recent-notes-heading">Recent Notes</h2>
 
 <div id="notes-container">
+<table>
 <% @notes.each do |note| %>
-  <ul>
-    <li class='note'><%= link_to note.title, note %> on <%= show_date(note.created_at) %></li>
-  </ul>
+  <tr class="<%= cycle("even", "odd") %>">
+    <td><%= link_to note.title, note %></td> 
+    <td>Created on <%= show_date(note.created_at) %></td>
+  </tr>
 <% end %>
-</div>
 </table>
+</div>
 
 <br />
 

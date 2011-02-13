@@ -31,3 +31,13 @@ a#new-note-link {float: right; position:relative; bottom: 40px;}
 
 /* Index */
 ul li.note {list-style-type: none;}
+h2#recent-notes-heading {
+  width: 100%; 
+  background: #201B21; 
+  color: #F6F7FB; 
+  padding: 2px 0px 2px 5px;
+  font-size: 130%;
+  font-family: Georgia, serif;
+  font-style: italic;
+}
+
