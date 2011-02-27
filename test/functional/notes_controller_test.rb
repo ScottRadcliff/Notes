@@ -64,5 +64,11 @@ class NotesControllerTest < ActionController::TestCase
     assert_response :success
     assert_select "#search"
   end
-  
+ 
+  test "search shoud return something" do 
+    post :index, "search" => nil 
+    assert_not_nil assigns(:notes)
+    assert_template :index
+  end
+
 end
