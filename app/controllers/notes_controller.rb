@@ -2,7 +2,7 @@ class NotesController < ApplicationController
   # GET /notes
   # GET /notes.xml
   def index
-    @notes = Note.find(:all, :limit => "5", :order => 'created_at DESC')
+    @notes = Note.search(params[:search])
     #@notes = Note.all
 
     respond_to do |format|
@@ -81,4 +81,5 @@ class NotesController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
 end

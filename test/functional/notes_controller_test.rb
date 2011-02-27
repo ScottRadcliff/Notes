@@ -14,7 +14,7 @@ class NotesControllerTest < ActionController::TestCase
     get :index
     assert_not_nil assigns(:notes)
     assert_select "#notes-container"
-    assert_select "#notes-container p"
+    assert_select "#notes-container table"
   end
 
   test "should get index" do
@@ -58,4 +58,11 @@ class NotesControllerTest < ActionController::TestCase
 
     assert_redirected_to notes_path
   end
+
+  test "should see search" do
+    get :index
+    assert_response :success
+    assert_select "#search"
+  end
+  
 end

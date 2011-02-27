@@ -11,7 +11,13 @@
 <header>
   <h1 class="main-heading"><%= link_to "Notes", :root, :id => 'home-link' %></h1>
   <%= link_to 'New Note', new_note_path, :id => 'new-note-link', :class => 'span-6' %>
+  <%= form_tag(notes_path, :method => :get) do %>
+    <%= label_tag :search, "Search" %>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag 'Search', :name => nil %>
+  <% end %>
 </header>
+
   <%= yield %>
 </div>
 </body>
