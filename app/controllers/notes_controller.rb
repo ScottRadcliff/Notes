@@ -2,13 +2,7 @@ class NotesController < ApplicationController
   # GET /notes
   # GET /notes.xml
   def index
-    @notes = Note.search(params[:search])
-    #@notes = Note.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @notes }
-    end
+    @notes = params[:search] ? Note.search(params[:search]) : Note.all
   end
 
   # GET /notes/1

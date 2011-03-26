@@ -5,7 +5,7 @@ class NotesControllerTest < ActionController::TestCase
     @note = notes(:one)
   end
  
- test "should see notes title" do
+  test "should see notes title" do
     get :index
     assert_select 'title', 'Notes'
  end
@@ -16,7 +16,7 @@ class NotesControllerTest < ActionController::TestCase
     assert_select "#notes-container"
     assert_select "#notes-container table"
   end
-
+  
   test "should get index" do
     get :index
     assert_response :success
