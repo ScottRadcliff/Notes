@@ -1,0 +1,22 @@
+TODO specs for the todo feature for use with the Notes app
+
+Requirements:
+1. Add a todo item
+2. Archive a todo item
+3. Delete a todo item
+4. Mark a todo item complete
+5. Edit a todo item
+
+Schema:
+id          int
+title       string
+due_date    date
+details     text
+archived    boolean
+completed   boolean
+
+
+
+Behavior:
+* Show all
+* When an item is marked complete, it should move to the bottom of the list
